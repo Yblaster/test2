@@ -11,6 +11,7 @@ public class MusicienFactory {
 			return new MusicienViolin(nom, instrument);
 		if ("Trompette".equalsIgnoreCase(instrument))
 			return new MusicienTrumpet(nom, instrument);
+		// si aucun type d'instrument ne correspond on renvoie null 
 		else 
 			return null; 
 	}

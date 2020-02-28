@@ -13,6 +13,10 @@ public class Main {
 		System.out.println(piano.getInstrument());
 		serveur.addMusicien(piano);
 		
+		//on vérifie le nombre de musicien ajouté 
+		System.out.println("nombre de musiciens : " + serveur.nbrMusicien());
+
+		
 		Musiciens trumpet =  MusicienFactory.getMusicien("jazz", "Trompette");
 		System.out.println(trumpet.getInstrument());
 		serveur.addMusicien(trumpet);
@@ -20,6 +24,17 @@ public class Main {
 		Musiciens violin =  MusicienFactory.getMusicien("Mozart", "Violon");
 		System.out.println(violin.getInstrument());
 		serveur.addMusicien(violin);
+		
+		System.out.println("nombre de musiciens : " + serveur.nbrMusicien());
+		
+		System.out.println("suppression d'un musicien");
+		Serveur.eraseMusicien(trumpet);
+		
+		System.out.println("nombre de musiciens : " + serveur.nbrMusicien());
+
+		
+		// création d'un musicien inconu qui est null 
+		Musiciens inconnu = MusicienFactory.getMusicien("inconnu", "instrument");
 		
 		
 		//création des partitions 
