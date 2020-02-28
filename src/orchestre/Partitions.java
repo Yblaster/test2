@@ -24,6 +24,11 @@ public class Partitions {
 
 	public void setTonalite(String tonalite) {
 		this.tonalite = tonalite;
+	}
+
+	public void attach(PartitionObserver partitionObserver) {
+		// TODO Auto-generated method stub
+		
 	} 
 	
 	

@@ -13,6 +13,7 @@ public class Main {
 		System.out.println(piano.getInstrument());
 		serveur.addMusicien(piano);
 		
+		
 		//on vérifie le nombre de musicien ajouté 
 		System.out.println("nombre de musiciens : " + serveur.nbrMusicien());
 
@@ -21,12 +22,15 @@ public class Main {
 		System.out.println(trumpet.getInstrument());
 		serveur.addMusicien(trumpet);
 		
+		
+		
 		Musiciens violin =  MusicienFactory.getMusicien("Mozart", "Violon");
 		System.out.println(violin.getInstrument());
 		serveur.addMusicien(violin);
 		
 		System.out.println("nombre de musiciens : " + serveur.nbrMusicien());
 		
+		//on supprime un musicien 
 		System.out.println("suppression d'un musicien");
 		Serveur.eraseMusicien(trumpet);
 		

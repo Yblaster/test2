@@ -1,8 +1,12 @@
 package orchestre;
 
-public class PartitionObserver {
+public class PartitionObserver extends Observer{
 	
-	Partitions partition;
+	public PartitionObserver(Partitions partition) {
+		this.partition = partition;
+		
+		
+	}
 	
 
 }
